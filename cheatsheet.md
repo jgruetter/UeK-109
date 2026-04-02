@@ -1,3 +1,42 @@
 # Docker
-Docker Image bauen und auf registry hochladen:
-``` docker build -f dockerfile(.web) -t ghcr.io/jgruetter/<imagename>:v1 (Manifest) ```
+Docker Image bauen:
+``` docker build -f dockerfile(.web) -t ghcr.io/jgruetter/<imagename>:v1 (Manifest)```
+
+Auf Registry hochladen: ```docker push <tag>```
+
+Neuer Tag bei Image setzen:
+```docker tag <oldtag> <newtag>```
+
+Image ausführen: ```docker run -d -p 8080:80 --name <name> <tag(ganzes image z.B. nginx:v1)>```
+
+In Container rein:
+```docker exec -it html-docker-app /bin/sh```
+
+Logs anschauen:
+
+```docker logs <name>```
+
+Container stoppen:
+
+```docker stop <name>```
+
+Container löschen:
+
+```docker rm <name>```
+
+Image löschen:
+
+```docker rmi <imagename>```
+
+Ganze Docker umgebung wegmachen(images, containers, volumes etc.):
+
+```docker system prune -a --volumes```
+
+Alle laufenden Docker-Container anzeigen:
+
+```docker ps```
+
+
+Alle Docker-Container anzeigen:
+
+```docker ps -a```
