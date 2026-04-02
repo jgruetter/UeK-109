@@ -77,21 +77,41 @@ Horizontale: Mehr maschienen aufbauen (Container)
 Vertikale: Mehr Rechenleistung auf host nehmen/machen (VM's)
 
 
-# 5 Merkmale der Cloud
+# 5 Merkmale der Cloud nach NIST
 
 - On-Demand Self service
-- Measured Service
-- Rapid Elasticity
+    - API
+    - CLI
+    - Web-Gui
 - Broad Network Access
 - Recource Pooling
+    - Wirtschaftsbegriff: Economy of Scale
+- Rapid Elasticity
+    - Hoch/Runter skalieren
+    - Container -> Horizintal
+    - VM's -> Vertikal
+- Measured Service
+
 
 Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen brauchen: economies of scale
 
-# Cloud Service Modelle
+# Cloud Service Modelle (Wo liegt die Verantwortung)
 
 ![image](images\service_models.png)
 
+- FaaS
+- SaaS
+- PaaS
+- IaaS
+- On-Prem
+  
+# Deployment-Modelle
 
+- Public Cloud
+- Private Cloud
+- Community Cloud (wird geteilt von der Interessensgemeinschaft)
+- Hybrid Cloud
+  
 # OpenShift Befehle:
 
 Alle Projekte anzeigen:
@@ -99,3 +119,5 @@ Alle Projekte anzeigen:
 
 Projekt wechseln:
 ```oc project <name>```
+
+
