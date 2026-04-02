@@ -90,3 +90,12 @@ Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen br
 # Cloud Service Modelle
 
 ![image](images\service_models.png)
+
+
+# OpenShift Befehle:
+
+Alle Projekte anzeigen:
+```oc projects```
+
+Projekt wechseln:
+```oc project <name>```
