@@ -4,4 +4,4 @@ Image bauen mit Dockerfile:
 
 Container starten:
 
-```docker build -t webserver .```
+```docker run -d -p 8081:80 webserver```
