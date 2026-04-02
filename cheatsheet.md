@@ -50,3 +50,22 @@ Im Pod/Container hat es:
 - Os (z.b alpine) (im container-registry (cr) ausgelagert)
 
 Dockerfile führt es alles zusammen (Bauplan)
+
+# 3 Layers von Kubernetes
+
+- CE (Container Engine) Aufg. 3.2
+    - containerd
+    - docker
+    - podman
+    - CRI-O (OpenShift)
+- CO (Container Orchestry) Aufg. 4.2
+    - Kubernetes (K8s, K3s, MiniKube etc.)
+    - Docker Compose
+    - Swarm
+- COE (Container Orcherstry enhancment) (basiert immer auf Kubernetes) Aufg. 6.2
+    - OpenShift
+    - OKD (OpenShift open-source)
+    - Ranger
+    - Tanzu
+
+Ist Kubernetes eine Container Engine? -> Nein, es ist eine Conteiner Ocherstrierung
