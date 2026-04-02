@@ -40,3 +40,13 @@ Alle laufenden Docker-Container anzeigen:
 Alle Docker-Container anzeigen:
 
 ```docker ps -a```
+
+# Pod(Container) Aubfau:
+
+Im Pod/Container hat es:
+
+- App (wird im git ausgelagert)
+- Middleware (z.b nginx) (im container-registry (cr) ausgelagert)
+- Os (z.b alpine) (im container-registry (cr) ausgelagert)
+
+Dockerfile führt es alles zusammen (Bauplan)
