@@ -69,3 +69,24 @@ Dockerfile führt es alles zusammen (Bauplan)
     - Tanzu
 
 Ist Kubernetes eine Container Engine? -> Nein, es ist eine Conteiner Ocherstrierung
+
+# Horizontale/ Vertikale Skaliereung
+
+Horizontale: Mehr maschienen aufbauen (Container)
+
+Vertikale: Mehr Rechenleistung auf host nehmen/machen (VM's)
+
+
+# 5 Merkmale der Cloud
+
+- On-Demand Self service
+- Measured Service
+- Rapid Elasticity
+- Broad Network Access
+- Recource Pooling
+
+Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen brauchen: economies of scale
+
+# Cloud Service Modelle
+
+![image](images\service_models.png)
