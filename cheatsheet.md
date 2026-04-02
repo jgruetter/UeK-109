@@ -1,4 +1,6 @@
-# Docker
+# Befehle
+
+## Docker
 Docker Image bauen:
 ``` docker build -f dockerfile(.web) -t ghcr.io/jgruetter/<imagename>:v1 (Manifest)```
 
@@ -41,7 +43,22 @@ Alle Docker-Container anzeigen:
 
 ```docker ps -a```
 
-# Pod(Container) Aubfau:
+## OpenShift Befehle:
+
+Alle Projekte anzeigen:
+```oc projects```
+
+Projekt wechseln:
+```oc project <name>```
+
+# Quizfragen
+
+## Unterschied Monitoring / Logging:
+
+Monitoring ist echtzeit Metriken
+Logging fehleranalyse (vergangenheit)
+
+## Pod(Container) Aubfau:
 
 Im Pod/Container hat es:
 
@@ -51,7 +68,7 @@ Im Pod/Container hat es:
 
 Dockerfile führt es alles zusammen (Bauplan)
 
-# 3 Layers von Kubernetes
+## 3 Layers von Kubernetes
 
 - CE (Container Engine) Aufg. 3.2
     - containerd
@@ -70,14 +87,14 @@ Dockerfile führt es alles zusammen (Bauplan)
 
 Ist Kubernetes eine Container Engine? -> Nein, es ist eine Conteiner Ocherstrierung
 
-# Horizontale/ Vertikale Skaliereung
+## Horizontale/ Vertikale Skaliereung
 
 Horizontale: Mehr maschienen aufbauen (Container)
 
 Vertikale: Mehr Rechenleistung auf host nehmen/machen (VM's)
 
 
-# 5 Merkmale der Cloud nach NIST
+## 5 Merkmale der Cloud nach NIST
 
 - On-Demand Self service
     - API
@@ -95,7 +112,7 @@ Vertikale: Mehr Rechenleistung auf host nehmen/machen (VM's)
 
 Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen brauchen: economies of scale
 
-# Cloud Service Modelle (Wo liegt die Verantwortung)
+## Cloud Service Modelle (Wo liegt die Verantwortung)
 
 ![image](images/service_models.png)
 
@@ -105,19 +122,18 @@ Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen br
 - IaaS
 - On-Prem
   
-# Deployment-Modelle
+## Deployment-Modelle
 
 - Public Cloud
 - Private Cloud
 - Community Cloud (wird geteilt von der Interessensgemeinschaft)
 - Hybrid Cloud
+
+## Shared Responsibility:
+
+Für was bin ich und für was ist der Cloud Anbieter zuständig?
+SLA
+
+## Was ist Dockerfile?
+Baupläne für Images
   
-# OpenShift Befehle:
-
-Alle Projekte anzeigen:
-```oc projects```
-
-Projekt wechseln:
-```oc project <name>```
-
-
