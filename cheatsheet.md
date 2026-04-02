@@ -97,7 +97,7 @@ Wie heisst der Wirtschaftsbegriff, welche sich Cloud-Anbieter zum Geld machen br
 
 # Cloud Service Modelle (Wo liegt die Verantwortung)
 
-![image](images\service_models.png)
+![image](images/service_models.png)
 
 - FaaS
 - SaaS
