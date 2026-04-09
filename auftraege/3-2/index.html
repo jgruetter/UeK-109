@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Example</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			background: #f4f7fb;
+			color: #1f2937;
+		}
+
+		.card {
+			background: white;
+			padding: 2rem;
+			border-radius: 12px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+			max-width: 480px;
+			width: calc(100% - 2rem);
+			text-align: center;
+		}
+
+		button {
+			margin-top: 1rem;
+			padding: 0.75rem 1.25rem;
+			border: none;
+			border-radius: 8px;
+			background: #2563eb;
+			color: white;
+			font-size: 1rem;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background: #1d4ed8;
+		}
+	</style>
+</head>
+<body>
+	<main class="card">
+		<h1>Hello, world!</h1>
+		<p>This is a simple example HTML page.</p>
+		<button onclick="alert('Button clicked!')">Click me</button>
+	</main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+services:
+
+  mongo:
+    image: mongo:4.2.0
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - backend-db-net
+
+  backend:
+    build:
+      context: ./backend
+      target: development
+    networks:
+      - backend-db-net
+      - frontend-backend-net
+
+  frontend:
+    build:
+      context: ./frontend
+      target: development
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend-backend-net
+
+volumes:
+  mongo-data:
+
+networks:
+  backend-db-net:
+  frontend-backend-net:
