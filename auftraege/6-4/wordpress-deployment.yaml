@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordpress
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wordpress
+  template:
+    metadata:
+      labels:
+        app: wordpress
+    spec:
+      containers:
+        - name: wordpress
+          image: bitnami/wordpress:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: WORDPRESS_DATABASE_HOST
+              value: db
+            - name: WORDPRESS_DATABASE_PORT_NUMBER
+              value: "3306"
+            - name: WORDPRESS_DATABASE_USER
+              value: wordpress
+            - name: WORDPRESS_DATABASE_PASSWORD
+              value: wordpress
+            - name: WORDPRESS_DATABASE_NAME
+              value: wordpress
