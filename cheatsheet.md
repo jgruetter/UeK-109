@@ -68,7 +68,7 @@ Im Pod/Container hat es:
 
 Dockerfile führt es alles zusammen (Bauplan)
 
-## 3 Layers von Kubernetes
+## 3 Layers von Kubernetes (Container Runtime Engine, Container Orchestry, Orchestry enhancment)
 
 - CE (Container Engine) Aufg. 3.2
     - containerd
@@ -136,6 +136,19 @@ SLA
 
 ## Was ist Dockerfile?
 Baupläne für Images
-  
+
 ## Zentrale Technische Grundlage für Cloud Computing:
 - Virtualisierung
+
+
+## Container Runtime Engines:
+
+
+# Kubernetes
+
+## Cheatsheet:
+![image](images\kubernetes_cheatsheet.png)
+
+## Alle .yaml Dateien in Verzeichnis applyen:
+```kubectl apply -f .```
+

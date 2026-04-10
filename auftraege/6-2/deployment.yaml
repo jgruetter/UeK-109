@@ -1,8 +1,3 @@
-# Vorlagen für Prüfung:
-
-## Deployment
-
-```
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -26,12 +21,9 @@ spec:
         ports:
         - containerPort: 8080
           protocol: TCP
-        image: ghcr.io/<Github-Username>/html-openshift-app:v1
+        image: ghcr.io/jgruetter/html-openshift-app:v1
         imagePullPolicy: Always
-```
-
-## Service
-```
+---
 kind: Service
 apiVersion: v1
 metadata:
@@ -47,11 +39,7 @@ spec:
       targetPort: 8080
   selector:
     app: html-openshift-app
-```
-
-## Route
-
-```
+---
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
@@ -68,12 +56,3 @@ spec:
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect
-```
-
-## (Pod)
-
-## (PVC)
-
-## HPA -> Horizontal Pod Autoscaler
-
-## Se -> Secret
