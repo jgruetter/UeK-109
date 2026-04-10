@@ -147,7 +147,7 @@ Baupläne für Images
 # Kubernetes
 
 ## Cheatsheet:
-![image](images\kubernetes_cheatsheet.png)
+![image](images/kubernetes_cheatsheet.png)
 
 ## Alle .yaml Dateien in Verzeichnis applyen:
 ```kubectl apply -f .```
